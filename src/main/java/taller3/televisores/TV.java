@@ -54,12 +54,13 @@ public class TV {
 		this.volumen = volumen;
 	}
 	
-	public void set(int canal) {
-		this.canal = canal;
+	
+	public int getNumTV() {
+		return numTV;
 	}
 	
-	public int getNumtv() {
-		return numTV;
+	public void setNumTV(int num) {
+		numTV = num;
 	}
 	
 	public void turnOn() {
@@ -99,6 +100,8 @@ public class TV {
 	}
 	
 	public void setCanal(int canal) {
-		this.canal = canal;
+		if (canal <= 120 && canal >= 1 && estado == true) {
+			this.canal = canal;
+		}
 	}
 }
