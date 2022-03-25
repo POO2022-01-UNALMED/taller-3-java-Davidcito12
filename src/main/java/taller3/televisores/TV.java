@@ -55,11 +55,11 @@ public class TV {
 	}
 	
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
-	public void setNumTV(int num) {
+	public static void setNumTV(int num) {
 		numTV = num;
 	}
 	
